@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CamThanhBook</string>
+    <string name="title_home">Home</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="title_category">Category</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_search">Search</string>
+    <string name="book_title">Book Name</string>
+    <string name="book_author">Tác Giả: </string>
+    <string name="book_category">Thể Loại: </string>
+    <string name="read_title">lượt đọc</string>
+    <string name="read_value">123 456</string>
+    <string name="description_text">Tiếu ngạo giang hồ là một tiểu thuyết kiếm hiệp của Kim Dung, lần đầu tiên được phát hành trên Minh báo từ ngày 20 tháng 4 năm 1967 đến 12 tháng 10 năm 1969. Tiêu đề "Tiếu ngạo giang hồ" được đặt theo một bản nhạc cầm tiêu hợp tấu đóng vai trò trung tâm của tác phẩm. </string>
+</resources>

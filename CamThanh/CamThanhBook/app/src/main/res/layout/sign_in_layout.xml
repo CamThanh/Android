@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="250dp">
+
+        <EditText
+            android:id="@+id/editTextNameSign"
+            android:layout_width="197dp"
+            android:layout_height="34dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_border_edittext"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:shadowDx="2"
+            android:shadowDy="4"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/editTextPasSign"
+            android:layout_width="197dp"
+            android:layout_height="34dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_border_edittext"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:shadowDx="2"
+            android:shadowDy="4"
+            android:text="Name" />
+
+        <Button
+            android:id="@+id/buttonSignIn"
+            android:layout_width="201dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/conner_button"
+            android:shadowDx="2"
+            android:shadowDy="4"
+            android:text="Đăng Nhập"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="250dp">
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="197dp"
+            android:layout_height="34dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_border_edittext"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:shadowDx="2"
+            android:shadowDy="4"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/editTextPass"
+            android:layout_width="197dp"
+            android:layout_height="34dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_border_edittext"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:shadowDx="2"
+            android:shadowDy="4"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="197dp"
+            android:layout_height="34dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_border_edittext"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:shadowDx="2"
+            android:shadowDy="4"
+            android:text="Name" />
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="201dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/conner_button"
+            android:shadowDx="2"
+            android:shadowDy="4"
+            android:text="Đăng Nhập"
+
+            />
+
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="188dp"
+        android:layout_height="36dp"
+        app:tabIndicatorColor="@color/colorBgNavSelect"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="192dp"
+        tools:ignore="MissingConstraints">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/signInTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng Nhập" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/registerTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng Ký" />
+    </android.support.design.widget.TabLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBgNavHide">#FFFFFF </color>
+    <color name="colorBgNavSelect">#FA979A</color>
+    <color name="colorTextNavHide">#AAAAAA</color>
+    <color name="colorTextNavSelect">#FA979A</color>
+    <color name="colorRoundButton">#FA979A</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="grey">#bfbfbf</color>
+    <color name="white">#fff</color>
+    <color name="top_cat1">#8e44ad</color>
+    <color name="top_cat2">#2980b9</color>
+    <color name="top_cat3">#27ae60</color>
+    <color name="top_cat4">#16a085</color>
+    <string-array name="color_category">
+        <item>#8e44ad</item>
+        <item>#2980b9</item>
+        <item>#27ae60</item>
+        <item>#16a085</item>
+    </string-array>
+</resources>

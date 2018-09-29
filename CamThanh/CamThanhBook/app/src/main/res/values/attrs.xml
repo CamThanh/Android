@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="my_category">
+        <item>Ngôn Tình</item>
+        <item>Trinh Thám</item>
+        <item>Kiếm Hiệp</item>
+        <item>Cổ Điển</item>
+    </string-array>
+    <string-array name="list_category">
+        <item>Ngôn Tình</item>
+        <item>Trinh Thám</item>
+        <item>Kiếm Hiệp</item>
+        <item>Cổ Điển</item>
+        <item>Lãng Mạn</item>
+        <item>Tâm Lý</item>
+    </string-array>
+    <integer-array name="number_books_category_list">
+        <item>69</item>
+        <item>96</item>
+        <item>169</item>
+        <item>196</item>
+        <item>169</item>
+        <item>196</item>
+    </integer-array>
+    <integer-array name="number_top_category">
+        <item>69</item>
+        <item>96</item>
+        <item>169</item>
+        <item>196</item>
+    </integer-array>
+</resources>
