@@ -1,11 +1,17 @@
 package com.camthanh.vn.camthanhbook.rest;
 
 import com.camthanh.vn.camthanhbook.signinup.SignInResponse;
+import com.camthanh.vn.camthanhbook.signinup.SignUpResponse;
 
+import org.json.JSONObject;
+
+import retrofit2.http.Body;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.Header;
+import retrofit2.http.Headers;
+import retrofit2.http.Multipart;
 import retrofit2.http.POST;
 import retrofit2.http.Query;
 
@@ -21,14 +27,17 @@ public interface CallInterface {
 
     @FormUrlEncoded
     @POST("/camthanh-oauth2/oauth/token")
-    retrofit2.Call<SignInResponse> register(@Field("grant_type") String grant_type, @Field("username") String username, @Field("password") String password);
-
-    @FormUrlEncoded
-    @POST("/camthanh-oauth2/oauth/token")
-    retrofit2.Call<SignInResponse> getRegister(@Header("Authorization") String authorization, @Header("Content-Type") String contentType, @Field("grant_type") String grant_type, @Field("username") String username, @Field("password") String password);
+    retrofit2.Call<SignUpResponse> register(@Field("grant_type") String grant_type, @Field("username") String username, @Field("password") String password);
 
     @POST("/camthanh-oauth2/oauth/token")
     @FormUrlEncoded
     Call<TokenResponse> getToken(@Field("client_id") String client_id, @Field("client_secret") String client_secret, @Field("scope") String scope, @Field("grant_type") String grant_type);
+
+    @FormUrlEncoded
+    @POST("/camthanh-oauth2/oauth/token")
+    retrofit2.Call<JSONObject> loginAccount(@Field("grant_type") String grant_type, @Field("client_id") String client_id, @Field("client_secret") String client_secret, @Field("username") String username, @Field("password") String password);
+
+    @POST("/camthanh-account/account")
+    retrofit2.Call<JSONObject> registerAccount(@Body JSONObject body);
 }
 

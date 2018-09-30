@@ -17,9 +17,9 @@ public class Call<T> {
     private String city;
 
     public Call(Context context, String city, Delegate delegate) {
-        this.delegate       = delegate;
-        this.city           = city;
-        this.loading        = new ProgressLoading(context);
+        this.delegate = delegate;
+        this.city = city;
+        this.loading = new ProgressLoading(context);
     }
 
     public void execute() {
@@ -30,13 +30,14 @@ public class Call<T> {
             @Override
             public void onResponse(retrofit2.Call<SignInResponse> call, Response<SignInResponse> response) {
                 int statusCode = response.code();
-                if(statusCode == Config.RESP_OK) {
+                if (statusCode == Config.RESP_OK) {
                     delegate.onSuccess(response.body());
                 } else {
                     delegate.onFailure("On Failure - " + statusCode);
                 }
                 loading.dismiss();
             }
+
             @Override
             public void onFailure(retrofit2.Call<SignInResponse> call, Throwable t) {
                 delegate.onFailure(t.getMessage());
@@ -47,6 +48,7 @@ public class Call<T> {
 
     public interface Delegate {
         void onSuccess(SignInResponse weatherResponse);
+
         void onFailure(Object t);
     }
 
