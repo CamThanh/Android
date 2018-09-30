@@ -19,7 +19,7 @@ public class WebService {
     private retrofit2.Call<JSONObject> callRegister;
     String CLIENT_ID = "spring-security-oauth2-read-write-client";
     String CLIENT_SECRET = "spring-security-oauth2-read-write-client-password1234";
-    String grant_type = "client_credentials";
+    String grant_type = "password";
 
     public WebService() {
 
